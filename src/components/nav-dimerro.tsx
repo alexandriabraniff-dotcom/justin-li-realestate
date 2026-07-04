@@ -26,7 +26,7 @@ export default function NavDimerro() {
         </nav>
 
         {/* Right CTA */}
-        <a href="#contact" className="d-nav-cta d-nav-cta--desktop">
+        <a href="/contact" className="d-nav-cta d-nav-cta--desktop">
           Contact
         </a>
 
@@ -56,7 +56,7 @@ export default function NavDimerro() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/contact"
             className="d-nav-cta"
             onClick={() => setMenuOpen(false)}
           >
