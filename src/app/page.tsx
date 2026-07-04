@@ -1,27 +1,43 @@
-import Nav from "@/components/nav";
-import StickyNav from "@/components/sticky-nav";
-import Hero from "@/components/hero";
-import About from "@/components/about";
-import FeaturedListings from "@/components/listings";
-import Services from "@/components/services";
-import Neighborhoods from "@/components/neighborhoods";
-import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
+import { config } from "@/lib/config";
+import Topbar from "@/components/topbar";
+import NavDimerro from "@/components/nav-dimerro";
+import HeroDimerro from "@/components/hero-dimerro";
+import QuickContact from "@/components/quickcontact";
+import AboutDimerro from "@/components/about-dimerro";
+import ListingsDimerro from "@/components/listings-dimerro";
+import TestimonialsDimerro from "@/components/testimonials-dimerro";
+import ContactDimerro from "@/components/contact-dimerro";
+import FooterDimerro from "@/components/footer-dimerro";
 
 export default function Home() {
+  const { designer } = config;
+
   return (
-    <main>
-      <Nav />
-      <StickyNav />
-      <Hero />
-      <About />
-      <Services />
-      <FeaturedListings />
-      <Neighborhoods />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      {/* Designer credit banner */}
+      <div className="designer-banner">
+        Website design by{" "}
+        <a
+          href={`mailto:${designer.email}`}
+          style={{ color: "inherit", textDecoration: "underline" }}
+        >
+          {designer.name}
+        </a>
+      </div>
+
+      <Topbar />
+      <NavDimerro />
+
+      <main>
+        <HeroDimerro />
+        <QuickContact />
+        <AboutDimerro />
+        <ListingsDimerro />
+        <TestimonialsDimerro />
+        <ContactDimerro />
+      </main>
+
+      <FooterDimerro />
+    </>
   );
 }

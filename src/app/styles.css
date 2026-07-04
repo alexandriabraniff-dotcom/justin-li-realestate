@@ -1839,3 +1839,1215 @@
     gap: 24px !important;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   DIMERRO — Luxury Realtor Design System
+   All components prefixed with d- to avoid conflicts.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Topbar ───────────────────────────────────────────────────────── */
+
+.d-topbar {
+  width: 100%;
+  background: #1a1612;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.d-topbar-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.d-topbar-left,
+.d-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.d-topbar-right {
+  justify-content: flex-end;
+}
+
+.d-topbar-item {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.d-topbar-item:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.d-topbar-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+}
+
+.d-topbar-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-topbar-pill {
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  padding: 4px 14px;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.d-topbar-pill:hover {
+  background: var(--color-accent);
+  color: #111010;
+}
+
+/* ── Nav Dimerro ──────────────────────────────────────────────────── */
+
+.d-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #111010;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.d-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.d-nav-logo {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.d-nav-logo-name {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.d-nav-logo-sub {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  font-family: system-ui, sans-serif;
+  margin-top: 2px;
+}
+
+.d-nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.d-nav-link {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: system-ui, sans-serif;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.d-nav-link:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.d-nav-cta {
+  background: var(--color-accent);
+  color: #111010;
+  padding: 9px 24px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+}
+
+.d-nav-cta:hover {
+  background: #d4b47a;
+}
+
+.d-nav-cta--desktop {
+  margin-left: auto;
+}
+
+.d-nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.d-nav-hamburger-line {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: #ffffff;
+}
+
+.d-nav-mobile-menu {
+  background: #111010;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.d-nav-mobile-link {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: system-ui, sans-serif;
+}
+
+/* ── Hero Dimerro ─────────────────────────────────────────────────── */
+
+.d-hero {
+  position: relative;
+  height: calc(100vh - 106px);
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.d-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.d-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.d-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.d-hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--color-accent);
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.d-hero-heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.08;
+  margin: 0;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.d-hero-cta {
+  display: inline-block;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 14px 36px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s;
+  margin-top: 8px;
+}
+
+.d-hero-cta:hover {
+  background: var(--color-accent);
+  color: #111010;
+}
+
+.d-hero-pagination {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.d-hero-pagination-text {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.12em;
+  font-family: system-ui, sans-serif;
+  white-space: nowrap;
+}
+
+/* ── Quick Contact ────────────────────────────────────────────────── */
+
+.d-quickcontact {
+  background: #F0EBE1;
+  padding: 0 32px;
+}
+
+.d-quickcontact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.d-quickcontact-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.d-quickcontact-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  outline: none;
+  letter-spacing: 0.03em;
+}
+
+.d-quickcontact-input::placeholder {
+  color: var(--color-text-muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.d-quickcontact-btn {
+  background: var(--color-accent);
+  color: #111010;
+  border: none;
+  padding: 0 36px;
+  height: 48px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 24px;
+  transition: background 0.2s;
+}
+
+.d-quickcontact-btn:hover {
+  background: #d4b47a;
+}
+
+/* ── About Dimerro ────────────────────────────────────────────────── */
+
+.d-about {
+  background: var(--color-bg);
+  padding: clamp(72px, 10vw, 128px) 10vw;
+}
+
+.d-about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 7vw, 100px);
+  align-items: center;
+}
+
+/* Left: overlapping image layout */
+.d-about-images {
+  position: relative;
+  height: 560px;
+}
+
+.d-about-img-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72%;
+  height: 88%;
+  overflow: hidden;
+}
+
+.d-about-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.d-about-img-secondary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 52%;
+  height: 46%;
+  overflow: hidden;
+  border: 4px solid var(--color-bg);
+}
+
+.d-about-img-secondary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.d-about-circle {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 161, 106, 0.25);
+  pointer-events: none;
+}
+
+/* Right: content */
+.d-about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-about-label {
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 18px 0;
+}
+
+.d-about-heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(30px, 3.2vw, 50px);
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin: 0 0 28px 0;
+}
+
+.d-about-body {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+  margin: 0 0 16px 0;
+  font-family: system-ui, sans-serif;
+}
+
+.d-about-disciplines {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.d-about-discipline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.d-about-discipline-icon {
+  color: var(--color-accent);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.d-about-discipline-label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  font-family: system-ui, sans-serif;
+}
+
+.d-about-signature {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 28px 0 28px 0;
+}
+
+.d-about-btn {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 12px 32px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.2s, color 0.2s;
+}
+
+.d-about-btn:hover {
+  background: var(--color-accent);
+  color: #111010;
+}
+
+/* ── Listings Dimerro ─────────────────────────────────────────────── */
+
+.d-listings {
+  background: #111010;
+  padding: clamp(72px, 10vw, 120px) 10vw;
+}
+
+.d-listings-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.d-listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.d-listings-label {
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 12px 0;
+}
+
+.d-listings-heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 52px);
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.d-listings-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.d-listings-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: block;
+}
+
+.d-listings-dot--active {
+  background: var(--color-accent);
+}
+
+/* Cards grid — 3 columns, middle elevated */
+.d-listings-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: end;
+}
+
+.d-listing-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.d-listing-card--featured {
+  /* Middle card elevated */
+  transform: translateY(-20px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.d-listing-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.d-listing-card-img-wrap img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+  transition: transform 0.4s ease;
+}
+
+.d-listing-card:hover .d-listing-card-img-wrap img {
+  transform: scale(1.03);
+}
+
+.d-listing-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.d-listing-card-strip {
+  background: var(--color-accent);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.d-listing-card-strip-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.d-listing-card-label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #111010;
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+}
+
+.d-listing-card-neighbourhood {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: rgba(17, 16, 16, 0.65);
+  font-family: system-ui, sans-serif;
+}
+
+.d-listing-card-cta {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #111010;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.d-listings-footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.d-listings-all-link {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.d-listings-all-link:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+/* ── Testimonials Dimerro ─────────────────────────────────────────── */
+
+.d-testimonials {
+  background: var(--color-bg);
+  padding: clamp(72px, 10vw, 120px) 10vw;
+}
+
+.d-testimonials-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-testimonials-header {
+  margin-bottom: 52px;
+}
+
+.d-testimonials-label {
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 14px 0;
+}
+
+.d-testimonials-heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(28px, 3.5vw, 52px);
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.15;
+}
+
+.d-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.d-testimonial-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.d-testimonial-stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 18px;
+}
+
+.d-testimonial-star {
+  color: var(--color-accent);
+  font-size: 14px;
+}
+
+.d-testimonial-quote {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  font-family: system-ui, sans-serif;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+}
+
+.d-testimonial-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 20px;
+}
+
+.d-testimonial-avatar {
+  width: 36px;
+  height: 36px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #111010;
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  flex-shrink: 0;
+}
+
+.d-testimonial-name {
+  font-size: 13px;
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.d-testimonial-date {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-family: system-ui, sans-serif;
+  margin: 2px 0 0 0;
+  letter-spacing: 0.04em;
+}
+
+.d-testimonials-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.d-testimonials-google-link {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.d-testimonials-google-link:hover {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+/* ── Contact Dimerro ──────────────────────────────────────────────── */
+
+.d-contact {
+  background: #111010;
+  padding: clamp(72px, 10vw, 120px) 10vw;
+}
+
+.d-contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(48px, 7vw, 100px);
+  align-items: start;
+}
+
+.d-contact-label {
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 18px 0;
+}
+
+.d-contact-heading {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 52px);
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 44px 0;
+}
+
+.d-contact-info-block {
+  margin-bottom: 32px;
+}
+
+.d-contact-info-block:last-child {
+  margin-bottom: 0;
+}
+
+.d-contact-info-label {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 8px 0;
+}
+
+.d-contact-info-value {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s;
+}
+
+.d-contact-info-value:hover {
+  color: var(--color-accent);
+}
+
+.d-contact-info-address {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.d-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.d-contact-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-contact-field-label {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  margin-bottom: 8px;
+}
+
+.d-contact-input,
+.d-contact-textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  padding: 13px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.d-contact-input::placeholder,
+.d-contact-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.d-contact-input:focus,
+.d-contact-textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.d-contact-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.d-contact-submit {
+  background: var(--color-accent);
+  color: #111010;
+  border: none;
+  padding: 15px 40px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.d-contact-submit:hover {
+  background: #d4b47a;
+}
+
+/* ── Footer Dimerro ───────────────────────────────────────────────── */
+
+.d-footer {
+  background: #080706;
+  padding: 72px 10vw 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.d-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-bottom: 56px;
+}
+
+.d-footer-brand {
+  max-width: 280px;
+}
+
+.d-footer-logo-name {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+
+.d-footer-logo-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.2em;
+  margin-top: 4px;
+  font-family: system-ui, sans-serif;
+}
+
+.d-footer-tagline {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 1.75;
+  margin: 16px 0 0 0;
+  font-family: system-ui, sans-serif;
+}
+
+.d-footer-cols {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.d-footer-col-heading {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: system-ui, sans-serif;
+  margin: 0 0 20px 0;
+}
+
+.d-footer-col-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.d-footer-col-link {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  transition: color 0.2s;
+}
+
+.d-footer-col-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.d-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.d-footer-copyright {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.d-footer-credit {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.d-footer-credit-link {
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.d-footer-credit-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DIMERRO RESPONSIVE — Mobile breakpoints
+   ══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .d-listings-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .d-listing-card:last-child {
+    display: none;
+  }
+
+  .d-listing-card--featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .d-topbar-left,
+  .d-topbar-right {
+    display: none;
+  }
+
+  .d-topbar-center {
+    width: 100%;
+  }
+
+  .d-nav-links {
+    display: none;
+  }
+
+  .d-nav-cta--desktop {
+    display: none;
+  }
+
+  .d-nav-hamburger {
+    display: flex;
+  }
+
+  .d-hero {
+    height: calc(100vh - 72px);
+    min-height: 480px;
+  }
+
+  .d-hero-heading {
+    font-size: clamp(32px, 8vw, 52px);
+  }
+
+  .d-quickcontact-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 24px 0;
+    gap: 16px;
+  }
+
+  .d-quickcontact-field {
+    width: 100%;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: auto;
+    padding-bottom: 16px;
+  }
+
+  .d-quickcontact-btn {
+    margin-left: 0;
+    width: 100%;
+    height: 44px;
+  }
+
+  .d-about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .d-about-images {
+    height: 360px;
+  }
+
+  .d-listings-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .d-listing-card:last-child {
+    display: flex;
+  }
+
+  .d-listing-card--featured {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .d-testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .d-contact-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .d-footer-top {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .d-footer-cols {
+    gap: 32px;
+  }
+
+  .d-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .d-about-images {
+    height: 280px;
+  }
+
+  .d-about-img-main {
+    width: 80%;
+    height: 85%;
+  }
+
+  .d-about-img-secondary {
+    width: 55%;
+    height: 45%;
+  }
+
+  .d-footer-cols {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
