@@ -3,9 +3,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Anchor link offset — clears sticky banner + fixed nav */
+/* Anchor link offset — clears sticky nav */
 section[id] {
-  scroll-margin-top: 105px;
+  scroll-margin-top: 70px;
 }
 
 @layer base {
