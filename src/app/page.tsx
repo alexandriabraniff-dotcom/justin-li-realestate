@@ -1,8 +1,6 @@
 import { config } from "@/lib/config";
-import Topbar from "@/components/topbar";
 import NavDimerro from "@/components/nav-dimerro";
 import HeroDimerro from "@/components/hero-dimerro";
-import QuickContact from "@/components/quickcontact";
 import AboutDimerro from "@/components/about-dimerro";
 import ListingsDimerro from "@/components/listings-dimerro";
 import TestimonialsDimerro from "@/components/testimonials-dimerro";
@@ -25,12 +23,10 @@ export default function Home() {
         </a>
       </div>
 
-      <Topbar />
       <NavDimerro />
 
       <main>
         <HeroDimerro />
-        <QuickContact />
         <AboutDimerro />
         <ListingsDimerro />
         <TestimonialsDimerro />

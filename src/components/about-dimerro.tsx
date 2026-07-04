@@ -39,22 +39,26 @@ export default function AboutDimerro() {
             </p>
           ))}
 
-          {/* 2-column bullet disciplines */}
+          {/* Divider */}
+          <div className="d-about-divider" />
+
+          {/* 2-column highlights */}
           <ul className="d-about-disciplines">
             {about.disciplines.map((d, i) => (
               <li key={i} className="d-about-discipline">
-                <span className="d-about-discipline-icon">{d.icon}</span>
-                <span className="d-about-discipline-label">{d.label}</span>
+                {d.label}
               </li>
             ))}
           </ul>
 
-          <p className="d-about-signature">
-            <em>— {agent.name} / {agent.title}</em>
-          </p>
+          {/* Signature block */}
+          <div className="d-about-sig-block">
+            <p className="d-about-sig-name">{agent.name}</p>
+            <p className="d-about-sig-title">{agent.title}</p>
+          </div>
 
-          <a href="#contact" className="d-about-btn">
-            Learn More
+          <a href="/contact" className="d-about-btn">
+            Work With Justin
           </a>
         </div>
       </div>
