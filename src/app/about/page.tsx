@@ -57,8 +57,6 @@ export default function AboutPage() {
                 ))}
               </ul>
 
-              <p className="d-about-signature">{agent.name}</p>
-
               <a href="/contact" className="d-about-btn">
                 WORK WITH JUSTIN
               </a>

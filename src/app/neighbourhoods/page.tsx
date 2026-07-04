@@ -10,12 +10,12 @@ export const metadata = {
 };
 
 const HOOD_IMAGES = [
-  "https://images.unsplash.com/photo-1609902725622-4d1ea23dfb6e?w=800&q=80",
-  "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=800&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
-  "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+  "/hood-coal-harbour.jpg",
+  "/hood-yaletown.jpg",
+  "/hood-kitsilano.jpg",
+  "/hood-west-vancouver.jpg",
+  "/hood-false-creek.jpg",
+  "/hood-mount-pleasant.jpg",
 ];
 
 export default function NeighbourhoodsPage() {

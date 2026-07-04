@@ -51,12 +51,6 @@ export default function AboutDimerro() {
             ))}
           </ul>
 
-          {/* Signature block */}
-          <div className="d-about-sig-block">
-            <p className="d-about-sig-name">{agent.name}</p>
-            <p className="d-about-sig-title">{agent.title}</p>
-          </div>
-
           <a href="/contact" className="d-about-btn">
             Work With Justin
           </a>

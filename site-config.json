@@ -22,7 +22,8 @@
   },
   "designer": {
     "name": "Alexandria Braniff",
-    "email": "hello@alexandriabraniff.com"
+    "email": "hello@alexandriabraniff.com",
+    "website": "https://alexandriabraniff.com"
   },
   "agent": {
     "name": "Justin Li",
@@ -81,7 +82,7 @@
       { "label": "About", "href": "/about" },
       { "label": "Listings", "href": "/listings" },
       { "label": "Neighbourhoods", "href": "/neighbourhoods" },
-      { "label": "Contact", "href": "/contact" }
+      { "label": "Blog", "href": "/blog" }
     ]
   },
   "hero": {
@@ -272,6 +273,70 @@
         "sqft": "1,880",
         "status": "Active",
         "label": "GEORGIA TOWERS"
+      }
+    ]
+  },
+  "blog": {
+    "posts": [
+      {
+        "slug": "coal-harbour-market-update-2024",
+        "category": "MARKET UPDATE",
+        "date": "June 2025",
+        "title": "Coal Harbour: Why Waterfront Demand Isn't Slowing Down",
+        "excerpt": "Despite broader market softening, Coal Harbour continues to command a premium. Here's what's driving sustained demand in Vancouver's most prestigious waterfront address.",
+        "image": "https://images.unsplash.com/photo-1551524164-687a55dd1126?w=900&q=80",
+        "readTime": "5 min read",
+        "featured": true
+      },
+      {
+        "slug": "first-time-buyer-guide-vancouver-2025",
+        "category": "BUYER GUIDE",
+        "date": "May 2025",
+        "title": "The First-Time Buyer's Roadmap to Greater Vancouver",
+        "excerpt": "From mortgage pre-approval to subject removal, here is everything you need to know before making your first offer in one of Canada's most competitive markets.",
+        "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80",
+        "readTime": "8 min read",
+        "featured": false
+      },
+      {
+        "slug": "selling-in-a-shifting-market",
+        "category": "SELLER STRATEGY",
+        "date": "April 2025",
+        "title": "How to Price Your Home Right in a Shifting Market",
+        "excerpt": "Overpricing in a balanced market is the single most costly mistake a seller can make. Here's the data-driven approach I use to find the number that sells.",
+        "image": "https://images.unsplash.com/photo-1582407947304-fd86f28f8b74?w=900&q=80",
+        "readTime": "6 min read",
+        "featured": false
+      },
+      {
+        "slug": "yaletown-vs-false-creek",
+        "category": "NEIGHBOURHOOD",
+        "date": "March 2025",
+        "title": "Yaletown vs. False Creek: Which Side of the Water Is Right for You?",
+        "excerpt": "Both neighbourhoods offer waterfront living, walkability, and world-class dining. But they attract very different buyers. Here is how to choose.",
+        "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80",
+        "readTime": "5 min read",
+        "featured": false
+      },
+      {
+        "slug": "investment-properties-vancouver-2025",
+        "category": "INVESTMENT",
+        "date": "February 2025",
+        "title": "The Case for Vancouver Pre-Sale Condos as an Investment Vehicle",
+        "excerpt": "With completion timelines stretching 3-5 years, pre-sale assignments carry real risk. But for the right buyer, the upside potential remains compelling.",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80",
+        "readTime": "7 min read",
+        "featured": false
+      },
+      {
+        "slug": "spring-2025-market-outlook",
+        "category": "MARKET UPDATE",
+        "date": "January 2025",
+        "title": "What the Spring 2025 Market Looks Like from the Ground Up",
+        "excerpt": "Inventory is rising, rates are stabilising, and buyers are returning with more negotiating power than they've had in years. Here's what to expect.",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80",
+        "readTime": "4 min read",
+        "featured": false
       }
     ]
   },

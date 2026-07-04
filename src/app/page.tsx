@@ -12,14 +12,23 @@ export default function Home() {
 
   return (
     <>
-      {/* Designer credit banner */}
+      {/* DESIGNER CREDIT BANNER - remove only after client payment */}
       <div className="designer-banner">
-        Website design by{" "}
+        Website designed by{" "}
+        <a
+          href={designer.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "inherit", textDecoration: "underline" }}
+        >
+          {designer.name}
+        </a>
+        {" · "}
         <a
           href={`mailto:${designer.email}`}
           style={{ color: "inherit", textDecoration: "underline" }}
         >
-          {designer.name}
+          {designer.email}
         </a>
       </div>
 

@@ -23,7 +23,35 @@ export default function ListingsPage() {
           eyebrow="FEATURED PROPERTIES"
           heading="Current Listings."
           backgroundImage={listings.pageHeaderImage}
-        />
+        >
+          <div className="d-lp-filter-inner">
+            <input
+              type="text"
+              className="d-lp-filter-field"
+              placeholder="Neighbourhood, address, or MLS®"
+            />
+            <select className="d-lp-filter-select" defaultValue="">
+              <option value="" disabled>Property Type</option>
+              <option value="condo">Condo</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="detached">Detached</option>
+              <option value="penthouse">Penthouse</option>
+            </select>
+            <select className="d-lp-filter-select" defaultValue="">
+              <option value="" disabled>Price Range</option>
+              <option value="under-1m">Under $1M</option>
+              <option value="1m-2m">$1M – $2M</option>
+              <option value="2m-3m">$2M – $3M</option>
+              <option value="3m-plus">$3M+</option>
+            </select>
+            <select className="d-lp-filter-select" defaultValue="">
+              <option value="" disabled>Status</option>
+              <option value="active">Active</option>
+              <option value="sold">Sold</option>
+            </select>
+            <button className="d-lp-filter-btn">SEARCH</button>
+          </div>
+        </PageBanner>
 
         {/* Active listings */}
         <section className="d-lp-section">

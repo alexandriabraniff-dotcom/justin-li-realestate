@@ -41,10 +41,12 @@ export default function FooterDimerro() {
             &copy; {year} {agent.name}. {footer.legal}
           </p>
           <p className="d-footer-credit">
-            Website by{" "}
+            Website designed by{" "}
             <a
-              href={`mailto:${designer.email}`}
+              href={designer.website}
               className="d-footer-credit-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {designer.name}
             </a>

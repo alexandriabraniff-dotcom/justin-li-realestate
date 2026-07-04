@@ -23,17 +23,36 @@ export default function HeroDimerro() {
         <h1 className="d-hero-heading">
           {agent.tagline.toUpperCase()}
         </h1>
+
+        {/* Search bar */}
+        <div className="d-hero-search">
+          <input
+            type="text"
+            className="d-hero-search-field"
+            placeholder="Neighbourhood, address, or MLS®"
+          />
+          <select className="d-hero-search-select" defaultValue="">
+            <option value="" disabled>Property Type</option>
+            <option value="condo">Condo</option>
+            <option value="townhouse">Townhouse</option>
+            <option value="detached">Detached</option>
+            <option value="penthouse">Penthouse</option>
+          </select>
+          <select className="d-hero-search-select" defaultValue="">
+            <option value="" disabled>Price Range</option>
+            <option value="under-1m">Under $1M</option>
+            <option value="1m-2m">$1M – $2M</option>
+            <option value="2m-3m">$2M – $3M</option>
+            <option value="3m-plus">$3M+</option>
+          </select>
+          <button className="d-hero-search-btn">SEARCH</button>
+        </div>
+
         <a href={hero.cta.secondary.href} className="d-hero-cta">
           EXPLORE LISTINGS
         </a>
       </div>
 
-      {/* Bottom pagination style */}
-      <div className="d-hero-pagination">
-        <span className="d-hero-pagination-text">
-          &#8592; Prev &nbsp;&nbsp;&mdash;&mdash;&mdash;&nbsp;&nbsp; Next &#8594;
-        </span>
-      </div>
     </section>
   );
 }
